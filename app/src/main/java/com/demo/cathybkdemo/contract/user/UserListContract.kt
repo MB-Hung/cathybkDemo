@@ -1,15 +1,14 @@
-package com.demo.cathybkdemo.contract
+package com.demo.cathybkdemo.contract.user
 
 import com.demo.cathybkdemo.webAPI.client.apiResponse.GitHubUserItem
 
-
 interface UserListContract {
 
-    interface View : BaseView<Presenter> {
+    interface ViewUser : UserBaseView<Presenter> {
         fun showUserList(userList: MutableList<GitHubUserItem>)
     }
 
-    interface Presenter : BasePresenter {
+    interface Presenter : UserPresenter {
         fun loadApiData(lastUserId: Int)
     }
 

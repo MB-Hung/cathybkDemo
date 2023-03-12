@@ -1,21 +1,23 @@
 package com.demo.cathybkdemo.views
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.demo.cathybkdemo.R
 import com.demo.cathybkdemo.adapter.UserAdapter
-import com.demo.cathybkdemo.contract.UserListContract
-import com.demo.cathybkdemo.contract.UserListPresenter
+import com.demo.cathybkdemo.contract.user.UserListContract
+import com.demo.cathybkdemo.contract.user.UserListPresenter
 import com.demo.cathybkdemo.databinding.ActivityMainBinding
 import com.demo.cathybkdemo.webAPI.client.apiResponse.GitHubUserItem
 
-class MainActivity : AppCompatActivity(), UserListContract.View {
+class MainActivity : AppCompatActivity(), UserListContract.ViewUser {
 
     private lateinit var presenter: UserListContract.Presenter
     private lateinit var binding: ActivityMainBinding
     private lateinit var mUserAdapter: UserAdapter
+    private var isLoadFirstTimeApi = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +28,12 @@ class MainActivity : AppCompatActivity(), UserListContract.View {
         binding.rvListUser.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter = mUserAdapter
+
+            mUserAdapter.setOnItemClickListener { _, _, position ->
+                val intent = Intent(this@MainActivity, UserDetailActivity::class.java)
+                intent.putExtra("UserName", mUserAdapter.data[position].login)
+                startActivity(intent)
+            }
 
             mUserAdapter.apply {
                 loadMoreModule.setOnLoadMoreListener {
@@ -46,7 +54,10 @@ class MainActivity : AppCompatActivity(), UserListContract.View {
 
     override fun onResume() {
         super.onResume()
-        presenter.start(0)
+        if (!isLoadFirstTimeApi) {
+            presenter.start(0)
+            isLoadFirstTimeApi = true
+        }
     }
 
     override fun showUserList(userList: MutableList<GitHubUserItem>) {
