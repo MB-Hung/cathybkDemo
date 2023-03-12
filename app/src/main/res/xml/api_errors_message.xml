@@ -4,15 +4,6 @@
     <entry key="UNKNOWN">發生未知的錯誤代碼</entry>
     <entry key="400">發生未知的錯誤，請稍後再試</entry>
     <entry key="401">Bad token</entry>
-    <entry key="91002">驗證碼未發送，驗證碼不存在</entry>
-    <entry key="91005">驗證碼已經失效，請重新點擊獲取驗證碼</entry>
-    <entry key="91011">請 E-mail 已存在，請輸入別的 E-mail</entry>
-    <entry key="20004">遠程調用失敗</entry>
-    <entry key="20005">重複操作</entry>
-    <entry key="20006">系統異常</entry>
-    <entry key="20007">簽名有誤</entry>
-    <entry key="20008">參數有誤</entry>
-    <entry key="20009">QR Code過時</entry>
-    <entry key="20010">開門失敗</entry>
-    <entry key="20011">非法請求</entry>
+    <entry key="404">發生錯誤</entry>
+
 </errorMessageMap>

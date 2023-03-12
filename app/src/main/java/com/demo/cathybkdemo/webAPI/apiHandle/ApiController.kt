@@ -8,7 +8,7 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.LayoutInflater
 import com.demo.cathybkdemo.BuildConfig
-import com.demo.cathybkdemo.MainActivity
+import com.demo.cathybkdemo.views.MainActivity
 import com.demo.cathybkdemo.R
 import com.demo.cathybkdemo.views.dialog.NoDoubleClickAlertDialogBuilder
 import com.demo.cathybkdemo.webAPI.MainApp.Companion.apiErrorManager
