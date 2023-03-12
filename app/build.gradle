@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.demo.cathybkdemo"
         minSdk 26
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -40,4 +40,17 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.github.aurae.retrofit2:converter-logansquare:1.4.1"
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+
+    // recycler
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6'
 }

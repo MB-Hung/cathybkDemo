@@ -1,10 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="colorPrimary">#00C7A2</color>
+    <color name="colorPrimaryDark">#00C7A2</color>
+
+
+    <color name="colorGray">#EEEEEE</color>
+    <color name="colorBlack">#222222</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite_FBFBFB">#FBFBFB</color>
+    <color name="colorLine">#0F555555</color>
+    <color name="colorWhite10">#1A000000</color>
+    <color name="colorDarkGray">#555555</color>
+    <color name="colorDarkLine">#32FFFFFF</color>
+
+    <color name="colorYellow">#FBAF21</color>
+    <color name="colorYellow_FFC134">#FFC134</color>
+    <color name="colorYellow_FDB912">#FDB912</color>
+    <color name="colorYellow_FFC705">#FFC705</color>
+
+
+    <color name="colorHintColor">#F5555555</color>
+    <color name="colorFacebook">#FF1977F3</color>
+    <color name="colorLightGray">#E0E0E0</color>
+    <color name="brownishGrey">#666666</color>
+
+    <color name="red_fc0000">#FC0000</color>
+    <color name="red_ff3c3c">#FF3C3C</color>
+
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white_alpha_80">#80FFFFFF</color>
+    <color name="white_alpha_1E">#1EFFFFFF</color>
+    <color name="gray_66666667">#66666667</color>
+    <color name="gray_666666">#666666</color>
+    <color name="gray_AAAAAA">#AAAAAA</color>
+    <color name="gray_EEEEEE">#EEEEEE</color>
+    <color name="green_CC00C7A2">#CC00C7A2</color>
+    <color name="green_B300C7A2">#B300C7A2</color>
+
+    <color name="progress_ok">#32a957</color>
+    <color name="progress_error">#f0507d</color>
+    <color name="progress">#34a853</color>
+
 </resources>

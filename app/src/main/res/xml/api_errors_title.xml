@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<errorTitleMap>
+    <entry key="INTERNET">連線異常</entry>
+    <entry key="UNKNOWN">系統異常</entry>
+    <entry key="400">系統異常</entry>
+    <entry key="401">發生錯誤</entry>
+    <entry key="91002">發生錯誤</entry>
+    <entry key="91011">發生錯誤</entry>
+    <entry key="20003">發生錯誤</entry>
+    <entry key="20004">發生錯誤</entry>
+    <entry key="20005">發生錯誤</entry>
+    <entry key="20006">發生錯誤</entry>
+    <entry key="20007">發生錯誤</entry>
+    <entry key="20008">發生錯誤</entry>
+    <entry key="20009">發生錯誤</entry>
+    <entry key="20010">發生錯誤</entry>
+    <entry key="20011">發生錯誤</entry>
+</errorTitleMap>
